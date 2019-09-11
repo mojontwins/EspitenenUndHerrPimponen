@@ -1,0 +1,122 @@
+# BANK 0 : BACKGROUND
+# -------------------
+
+MAPFILE ..\dev\assets\tiledata.h
+
+# FONT. Substitute later
+OPEN font.png
+PALS palts0.png
+CHARSET 0, 0, 32, 2
+
+# Metatilesets.
+
+# Set 0
+OPEN a/ts0.png
+PALS palts0.png
+LABEL ts0
+MAPPED 0, 0, 2, 2, 8, 4 DEINTERLACED PRECALC_ATTRS
+
+# Set 1
+OPEN a/ts1.png
+PALS palts1.png
+LABEL ts1
+MAPPED 0, 0, 2, 2, 8, 4 DEINTERLACED PRECALC_ATTRS
+
+# Set 2 is set 0 recoloured.
+
+# Set 3
+OPEN a/ts3.png
+PALS palts3.png
+LABEL ts3
+MAPPED 0, 0, 2, 2, 8, 4 DEINTERLACED PRECALC_ATTRS
+
+# Set 4
+OPEN a/ts4.png
+PALS palts4.png
+LABEL ts4
+MAPPED 0, 0, 2, 2, 8, 4 DEINTERLACED PRECALC_ATTRS
+
+# Set 5 is set 1 recoloured.
+
+# Set 6
+OPEN a/ts6.png
+PALS palts6.png
+LABEL ts6
+MAPPED 0, 0, 2, 2, 8, 4 DEINTERLACED PRECALC_ATTRS
+
+# Set 7
+OPEN a/ts7.png
+PALS palts7.png
+LABEL ts7
+MAPPED 0, 0, 2, 2, 8, 4 DEINTERLACED PRECALC_ATTRS
+
+# Set 8
+OPEN a/ts8.png
+PALS palts8.png
+LABEL ts8
+MAPPED 0, 0, 2, 2, 8, 4 DEINTERLACED PRECALC_ATTRS
+
+# Set 9
+OPEN a/ts9.png
+PALS palts9.png
+LABEL ts9
+MAPPED 0, 0, 2, 2, 8, 4 DEINTERLACED PRECALC_ATTRS
+
+# Fill up
+FILL 4096
+
+# Reset
+RESETPOOL
+
+# BANK 1 : SPRITES
+# -------------------
+
+SKIPEMPTY
+MAPFILE ..\dev\assets\spritedata.h
+
+# Bits
+OPEN ssbits.png
+PALS palss0.png
+CHARSET 0, 0, 18, 1
+
+OPEN ss.png
+PALS palss0.png
+
+# Player
+LABEL sspl
+METASPRITESET 0, 0, 2, 3, 4, 1, -4, -8 FLIPPED
+METASPRITE 8, 0, 2, 3, -4, -8 FLIPPED
+METASPRITE 10, 0, 2, 3, -4, -8 FLIPPED
+METASPRITE 12, 0, 2, 3, -4, -7 FLIPPED
+METASPRITE 14, 0, 2, 3, -4, -8 FLIPPED
+
+# Enems
+LABEL ssena
+METASPRITESET 0, 3, 2, 3, 2, 1, -4, -8 FLIPPED
+LABEL ssenb
+METASPRITESET 4, 3, 3, 2, 2, 1, -8, 0 FLIPPED
+LABEL ssenc
+METASPRITESET 0, 6, 4, 1, 1, 1, -12, 0
+LABEL ssend
+METASPRITESET 0, 7, 2, 3, 3, 1, -4, -8 FLIPPED
+LABEL ssene
+METASPRITESET 4, 5, 2, 2, 1, 1, -4, 0
+LABEL ssenf
+METASPRITESET 6, 5, 2, 2, 5, 1, -4, 0 FLIPPED
+
+# Ana
+LABEL ssana
+METASPRITESET 0, 12, 2, 4, 1, 1, -4, -16 FLIPPED
+
+# Explosion
+LABEL ssexpl
+METASPRITESET 0, 10, 2, 2, 1, 1, -4, 0
+
+# Points
+OPEN sspoints.png
+LABEL sspointsa
+METASPRITESET 0, 0, 1, 1, 5, 1, 4, 0
+LABEL sspointsb
+METASPRITESET 5, 0, 2, 1, 3, 1, 0, 0
+
+FILL 8192
